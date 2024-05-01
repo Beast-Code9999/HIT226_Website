@@ -1,0 +1,256 @@
+/*Set the overall box size to border-box to include padding and border.*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*Default font settings and full height settings*/
+body,
+html {
+  font-family: 'Roboto Slab', serif;
+  width: 100%;
+  height: 100%;
+}
+
+/*Set sorting and margin in the middle of the page title*/
+.page-title {
+  text-align: center; 
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+  font-size: 2.5rem; 
+  font-family: 'Raleway', sans-serif; 
+}
+/*a style for the body*/
+body {
+  background-color: #edc6b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh; 
+}
+/*a style for the h1*/
+h1 {
+  background-color: #ffffff; 
+  color: #af421d; 
+  padding: 20px 40px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; 
+  width: fit-content; 
+}
+/*the style of a square box containing a card*/
+.cards {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+/*image for cards*/
+.card--1 .card__img,
+.card--1 .card__img--hover {
+  background-image: url('img/1.jpg'); 
+}
+
+.card--2 .card__img,
+.card--2 .card__img--hover {
+  background-image: url('img/2.jpg'); 
+}
+
+.card--3 .card__img,
+.card--3 .card__img--hover {
+  background-image: url('img/3.jpg');
+}
+
+.card--4 .card__img,
+.card--4 .card__img--hover {
+  background-image: url('img/4.jpg'); 
+}
+
+/*design for like button and cooking time */
+.card__like {
+  background-color: white;
+  padding: 5px 8px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.card__like-count {
+  margin-left: 4px;
+}
+
+
+.card__time {
+  font-size: 16px;
+  color: #ce1053;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+/*Sizing the card image, rounded corners.*/
+.card__img,
+.card__img--hover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+  
+/*Information that appears when the mouse cursor is placed on the card*/
+  .card:hover .card__info-hover {
+    opacity: 1; 
+}
+
+
+.card__like {
+  background-color: white;
+  padding: 1px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 7px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px; 
+  left: 10px; 
+  z-index: 5; 
+}
+
+.card__time {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 5;
+}
+
+
+
+
+.card__img--hover {
+  transition: 0.2s all ease-out;
+  position: absolute;
+  height: 235px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  top: 0;
+}
+  
+.card {
+  margin: 20px 10px;
+  margin-right: 25px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+  width: calc(50% - 40px);
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+  
+.card__img, .card__img--hover {
+  height: 400px;
+  width:100%;
+  background-size: cover; 
+  background-position: center; 
+  border-top-right-radius: 12px;
+} 
+  
+
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1, 1.1);
+}
+  
+.card__info {
+  z-index: 2;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 16px 24px 24px 24px;
+}
+
+
+.card__category {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #f2845f;
+  display: block !important; 
+  visibility: visible !important; 
+  z-index: 100; 
+  position: relative; 
+}
+  
+
+.card__title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: 'Roboto Slab', serif;
+  color: #b56c53;
+}
+
+.card__info-hover {
+    z-index: 10;
+}
+
+.card__description {
+  opacity: 0;
+  max-height: 0; 
+  overflow: hidden;
+  transition: opacity 0.3s, max-height 0.3s;
+}
+
+.card__title .card__category{
+  transition: transform 0.3s;
+}
+
+.card.clicked .card__title .card__category{
+  transform: translateY(-100%); 
+}
+
+.card.clicked .card__description {
+  opacity: 1; /* Show the description */
+  max-height: 100px; 
+}
+/*button design*/
+.view-detail-btn {
+  opacity: 0;
+  visibility: hidden;
+  display: block;
+  background-color: #ad7d52;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition for visibility and opacity */
+}
+
+.view-detail-btn:hover {
+  background-color: #905f3a;
+}
+/* When the card is clicked, show the View Detail */
+.card.clicked .view-detail-btn {
+  opacity: 1; 
+  visibility: visible; /* Ensure the button is visible */
+} 

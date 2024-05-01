@@ -1,0 +1,18 @@
+/* header */
+.header {
+    height: 65vh;
+    /* background-image: url(./img/header-cover.jpg); will decide later */
+    background-color: var(--color-primary);
+    background-size: cover;
+    background-position: center;
+    /* clip the background image */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    position: relative; }
+    @media (max-width: 37.5em) {
+        .header {
+            margin-bottom: 6rem;
+            clip-path:polygon(0 0, 100% 0, 100% 95%, 0 95%); 
+      } 
+}
+
+

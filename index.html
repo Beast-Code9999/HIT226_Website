@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/template.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/trending.css">
+    <script src="./scripts/slider.js" defer></script>
+    <title>HIT226 Group 6</title>
+</head>
+<body>
+    <!-- Navigation container pop up -->
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" name="navigation" id="navigation-toggle">
+
+        <label for="navigation-toggle" class="navigation__button">
+            <span class="navigation__icon"></span>
+        </label>
+        
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="./index.html" class="navigation__link">Home</a></li>
+                <li class="navigation__item"><a href="./pages/recipes.html" class="navigation__link">Recipes</a></li>
+                <li class="navigation__item"><a href="./pages/about.html" class="navigation__link">About us</a></li>
+                <li class="navigation__item"><a href="./pages/contact.html" class="navigation__link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header class="header">
+        <div class="header__logo-box">
+            <p class="header__logo">GROUP 6</p>
+            <!-- <img class="header__logo" src="./img/" alt="Logo"> -->
+        </div>
+        
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Some text</span>
+                <span class="heading-primary--sub">More sub texts</span>
+            </h1>
+            <a href="#" class="btn btn--white btn--animated">More recipes</a>
+        </div>
+    </header>
+    <main class="main margin-bottom-big">
+
+        <!-- trending section -->
+        <section class="section section--trending">
+            <h1 class="section__heading margin-bottom-small">Trending</h1>
+            <div class="container container--trending">
+                <div class="container__wrapper">
+                    <button class="slider-button slider-button--previous" id="button-previous"><span>&#8249;</span></button>
+                    <div class="cards--trending margin-bottom-medium" id="cards--trending">
+                        <article class="card card--1">
+                            <div class="card__img"></div>
+                            <div class="card__info">
+                                <span class="card__like">❤️<span class="like-count">0</span></span>
+                                <span class="card__time">🕒20 min</span>
+                                <span class="card__category">Korean</span>
+                                <h2 class="card__title">Tteokbokki</h2>
+                                <p class="card__description">Tteokbokki is a spicy Korean rice cake dish.</p>
+                                    <button class="view-detail-btn">View Detail</button>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="card card--2">
+                            <div class="card__img"></div>
+                            <div class="card__info">
+                                <span class="card__like">❤️<span class="like-count">0</span></span>
+                                <span class="card__time">🕒4-5 hour</span>
+                                <span class="card__category">Vietnamese</span>
+                                <h3 class="card__title">Phở </h3>
+                                <p class="card__description">Phở is a Vietnamese soup with rice noodles, herbs, and meat in broth.</p>
+                                    <button class="view-detail-btn">View Detail</button>
+                                </a>
+                                    
+                                </a>    
+                            </div>
+                        </article>
+                        <article class="card card--3">
+                            <div class="card__img"></div>
+                            <div class="card__info">
+                                <span class="card__like">❤️<span class="like-count">0</span></span>
+                                <span class="card__time">🕒30 min</span>
+                                <span class="card__category">Nepal</span>
+                                <h2 class="card__title">Momo</h2>
+                                <p class="card__description">Momo is a type of Nepalese dumpling filled with meat or vegetables</p>
+                                    <button class="view-detail-btn">View Detail</button>
+                                </a>
+                                    
+                                </a>
+                            </div>
+                        </article>
+                        <article class="card card--4">
+                            <div class="card__img"></div>
+                            <div class="card__info">
+                                <span class="card__like">❤️<span class="like-count">0</span></span>
+                                <span class="card__time">🕒1 hour</span>
+                                <span class="card__category">Timor</span>
+                                <h2 class="card__title">Batar daan</h2>
+                                <p class="card__description">A flavorful blend of corn, mung beans, and veggies with garnished.</p>
+                                    <button class="view-detail-btn">View Detail</button>
+                                </a>
+                                    
+                                </a>      
+                            </div>
+                        </article>
+                        <article class="card card--1">
+                            <div class="card__img"></div>
+                            <div class="card__info">
+                                <span class="card__like">❤️<span class="like-count">0</span></span>
+                                <span class="card__time">🕒20 min</span>
+                                <span class="card__category">Korean</span>
+                                <h2 class="card__title">Tteokbokki</h2>
+                                <p class="card__description">Tteokbokki is a spicy Korean rice cake dish.</p>
+                                    <button class="view-detail-btn">View Detail</button>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="card card--2">
+                            <div class="card__img"></div>
+                            <div class="card__info">
+                                <span class="card__like">❤️<span class="like-count">0</span></span>
+                                <span class="card__time">🕒4-5 hour</span>
+                                <span class="card__category">Vietnamese</span>
+                                <h3 class="card__title">Phở </h3>
+                                <p class="card__description">Phở is a Vietnamese soup with rice noodles, herbs, and meat in broth.</p>
+                                    <button class="view-detail-btn">View Detail</button>
+                                </a>
+                                    
+                                </a>    
+                            </div>
+                        </article>
+                        <article class="card card--3">
+                            <div class="card__img"></div>
+                            <div class="card__info">
+                                <span class="card__like">❤️<span class="like-count">0</span></span>
+                                <span class="card__time">🕒30 min</span>
+                                <span class="card__category">Nepal</span>
+                                <h2 class="card__title">Momo</h2>
+                                <p class="card__description">Momo is a type of Nepalese dumpling filled with meat or vegetables</p>
+                                    <button class="view-detail-btn">View Detail</button>
+                                </a>
+                                    
+                                </a>
+                            </div>
+                        </article>
+                        <article class="card card--4">
+                            <div class="card__img"></div>
+                            <div class="card__info">
+                                <span class="card__like">❤️<span class="like-count">0</span></span>
+                                <span class="card__time">🕒1 hour</span>
+                                <span class="card__category">Timor</span>
+                                <h2 class="card__title">Batar daan</h2>
+                                <p class="card__description">A flavorful blend of corn, mung beans, and veggies with garnished.</p>
+                                    <button class="view-detail-btn">View Detail</button>
+                                </a>
+                                    
+                                </a>      
+                            </div>
+                        </article>
+                    </div>
+                    <button class="slider-button slider-button--next" id="button-next"><span>&#8250;</span></button>
+                    <div class="scrollbar" id="scrollbar">
+                        <div class="scrollbar__track" id="scrollbar__track">
+                            <div class="scrollbar__thumb"  id="scrollbar__thumb"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="margin-bottom-medium">the "hyein" folder in the top directory is the card design that we have chosen</h1>
+        <h2 class="margin-bottom-medium">All are designed for mobile, though slider may glitch using "inspect" in multiple dimensions. It Requires a reaload each time.</h2>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div>Footer here</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.header {
+    height: 14.2rem;
+    background-color: var(--color-primary);
+}
+@media (min-width: 31.25rem) {
+    .header {
+        height: 19.5rem;
+    }
+}
